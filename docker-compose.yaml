@@ -1,0 +1,29 @@
+version: '3.8'
+services:
+  pglife:
+    build: .
+    # image: php:8.2-apache
+    ports:
+      - "80:80"
+    depends_on:
+      - pgdb
+    volumes:
+      - .:/var/www/html
+      - ./apache_logs:/var/log/apache2
+
+  pgdb:
+    image: mysql:8.2.0
+    environment:
+      MYSQL_DATABASE: pglife
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+    volumes:
+      - ./SQL:/docker-entrypoint-initdb.d
+      # - ./mysql_data:/var/lib/mysql
+  pglifephpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - "8000:80"
+    depends_on:
+      - pgdb
+    environment:
+      PMA_HOST: pgdb
