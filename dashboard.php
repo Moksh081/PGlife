@@ -76,8 +76,9 @@ $interested_properties = mysqli_fetch_all($result_2, MYSQLI_ASSOC);
                         <div class="college"><?= $user['college_name'] ?></div>
                     </div>
                     <div class="edit">
-                        <div class="edit-profile">Edit Profile</div>
-                    </div>
+    <div class="edit-profile" onclick="redirectToAddPG()">ADD PG</div>
+</div>
+
                 </div>
             </div>
         </div>
@@ -172,7 +173,11 @@ $interested_properties = mysqli_fetch_all($result_2, MYSQLI_ASSOC);
     <?php
     include "includes/footer.php";
     ?>
-
+    <script>
+    function redirectToAddPG() {
+        window.location.href = "addpg.php"; 
+    }
+    </script>
     <script type="text/javascript" src="js/dashboard.js"></script>
 </body>
 

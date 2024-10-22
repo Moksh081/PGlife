@@ -1,0 +1,126 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full page height */
+html, body {
+    height: 50%;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Center form container */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /* Full viewport height */
+}
+
+/* Form styling */
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;           /* Default width for small screens */
+    max-width: 500px;      /* Limit form width on large screens */
+    margin: 20px;          /* Add margin to prevent overflow on small screens */
+}
+
+/* Input field styling */
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Label styling */
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Submit button styling */
+form input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Styling for error messages */
+.error-message {
+    color: red;
+    font-size: 14px;
+}
+
+/* Styling for success messages */
+.success-message {
+    color: green;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Media queries for responsiveness */
+@media screen and (min-width: 768px) {
+    /* For tablets and medium screens */
+    form {
+        width: 80%;   /* Larger width for medium screens */
+        max-width: 600px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* For larger desktop screens */
+    form {
+        width: 60%;   /* Increase width on large screens */
+        max-width: 700px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    /* For extra large desktop screens */
+    form {
+        width: 50%;   /* Reduce form width to fit large screens */
+        max-width: 800px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* For small mobile screens */
+    form {
+        width: 95%;   /* Full width on small screens */
+        padding: 20px;
+    }
+
+    form input, form select, form textarea {
+        font-size: 14px;   /* Smaller font size for mobile */
+    }
+
+    form input[type="submit"] {
+        font-size: 14px;
+    }
+}
