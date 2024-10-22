@@ -41,8 +41,8 @@
             <label for="rating_safety">Rating (Safety):</label>
             <input type="number" id="rating_safety" name="rating_safety" step="0.1" max="5" min="0" required>
 
-            <label for="pg_images">PG Images:</label>
-            <input type="file" id="pg_images" name="pg_images[]" multiple accept="image/*" required>
+            <!-- <label for="pg_images">PG Images:</label>
+            <input type="file" id="pg_images" name="pg_images[]" multiple accept="image/*" required> -->
 
             <input type="submit" value="Add PG">
         </form>
