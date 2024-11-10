@@ -64,6 +64,10 @@
                         <label for="gender-female">
                             Female
                         </label>
+                        <input type="radio" class="ml-3" id="gender-other" name="gender" value="other" />
+                        <label for="gender-other">
+                            other
+                        </label>
                     </div>
 
                     <div class="form-group">
