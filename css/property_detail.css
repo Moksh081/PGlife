@@ -34,7 +34,9 @@
     font-size: 20px;
     cursor: pointer;
 }
-
+.chat-with-owner-btn{
+    padding-right: 20px;
+}
 .interested-text {
     font-size: 10px;
 }
@@ -109,11 +111,11 @@
     margin-right: 4px;
 }
 
-.rating-criteria {
+.rating-criteria,.chat-with-owner-btn {
     margin: 28px 0px;
 }
 
-.rating-criteria-icon {
+.rating-criteria-icon,.chat-with-owner-btn {
     width: 14px;
 }
 
@@ -194,4 +196,8 @@
     text-align: right;
     font-weight: bold;
     margin-top: 12px;
+}
+
+.chat-with-owner-btn:hover {
+    background-color: #0056b3;
 }

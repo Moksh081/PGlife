@@ -69,7 +69,7 @@ CREATE TABLE `cities` (
 --
 
 INSERT INTO `cities` (`id`, `name`) VALUES
-(1, 'Delhi'),
+(1, 'Patiala'),
 (2, 'Mumbai'),
 (3, 'Bengaluru'),
 (4, 'Hyderabad');
@@ -128,8 +128,8 @@ CREATE TABLE `properties` (
 --
 
 INSERT INTO `properties` (`id`, `city_id`, `name`, `address`, `description`, `gender`, `rent`, `rating_clean`, `rating_food`, `rating_safety`, `images`) VALUES
-(1, 1, 'Saxena\'s Paying Guest', 'H.No. 3958 Kaseru Walan, Pahar Ganj, New Delhi, Delhi 110055', 'Furnished studio apartment - share it with close friends! Located in posh area of Bijwasan in Delhi, this house is available for both boys and girls. Go for a private room or opt for a shared one and make it your own abode. Go out with your new friends - ', 'male', 5000, 4.3, 3.4, 4.8, NULL),
-(2, 1, 'Navrang PG Home', '644-C,Mohalla Baoli 6 Tooti Chowk, Paharganj, New Delhi, Delhi 110055', 'Furnished studio apartment - share it with close friends! Located in posh area of Bijwasan in Delhi, this house is available for both boys and girls. Go for a private room or opt for a shared one and make it your own abode. Go out with your new friends - ', 'unisex', 6000, 2.9, 3.4, 3.8, NULL),
+(1, 1, 'Saxena\'s Paying Guest', 'H.No. 395 Adarsh Nagar, Patiala, Punjab 147001', 'Furnished studio apartment - share it with close friends! Located in posh area of Bijwasan in Delhi, this house is available for both boys and girls. Go for a private room or opt for a shared one and make it your own abode. Go out with your new friends - ', 'male', 5000, 4.3, 3.4, 4.8, NULL),
+(2, 1, 'Navrang PG Home', '644-C,Urban estate , Patiala, Punjab 147002', 'Furnished studio apartment - share it with close friends! Located in posh area of Bijwasan in Delhi, this house is available for both boys and girls. Go for a private room or opt for a shared one and make it your own abode. Go out with your new friends - ', 'unisex', 6000, 2.9, 3.4, 3.8, NULL),
 (3, 2, 'Navkar Paying Guest', '44, Juhu Scheme, Juhu, Mumbai, Maharashtra 400058', 'Furnished studio apartment - share it with close friends! Located in posh area of Bijwasan in Delhi, this house is available for both boys and girls. Go for a private room or opt for a shared one and make it your own abode. Go out with your new friends - ', 'female', 9500, 3.9, 3.8, 4.9, NULL),
 (4, 2, 'PG for Girls Borivali West', 'Plot no.258/D4, Gorai no.2, Borivali West, Mumbai, Maharashtra 400092', 'Furnished studio apartment - share it with close friends! Located in posh area of Bijwasan in Delhi, this house is available for both boys and girls. Go for a private room or opt for a shared one and make it your own abode. Go out with your new friends - ', 'female', 8000, 4.2, 4.1, 4.5, NULL),
 (5, 2, 'Ganpati Paying Guest', 'Police Beat, Sainath Complex, Besides, SV Rd, Daulat Nagar, Borivali East, Mumbai - 400066', 'Furnished studio apartment - share it with close friends! Located in posh area of Bijwasan in Delhi, this house is available for both boys and girls. Go for a private room or opt for a shared one and make it your own abode. Go out with your new friends - ', 'male', 8500, 4.2, 3.9, 4.6, NULL);

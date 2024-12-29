@@ -227,7 +227,6 @@ $interested_users_properties = mysqli_fetch_all($result_3, MYSQLI_ASSOC);
             </div>
         </div>
     </div>
-
     <?php
     include "includes/signup_modal.php";
     include "includes/login_modal.php";

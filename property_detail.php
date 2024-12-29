@@ -63,6 +63,8 @@ $interested_users_count = mysqli_num_rows($result_4);
     include "includes/head_links.php";
     ?>
     <link href="css/property_detail.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 
 <body>
@@ -142,6 +144,11 @@ $interested_users_count = mysqli_num_rows($result_4);
                 }
                 ?>
             </div>
+            <div>
+    <a href="chatapp/index.php" class="chat-with-owner-btn" title="Chat with Owner" target="_blank">
+        <i class="fas fa-comments"></i>
+    </a>
+    </div>
             <div class="interested-container">
                 <?php
                 $is_interested = false;
@@ -393,7 +400,6 @@ $interested_users_count = mysqli_num_rows($result_4);
             </div>
         </div>
     </div>
-
     <div class="property-testimonials page-container">
         <h1>What people say</h1>
         <?php
